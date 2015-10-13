@@ -6,6 +6,7 @@
     // 3rd party modules
     'ionic',
     'chart.js'
+
   ])
   .run(runFn)
   .config(configuration);
@@ -26,12 +27,7 @@
   };
 
 
-    function configuration($stateProvider, $urlRouterProvider) {
-        $stateProvider
-          .state('settings', {
-            url: '/settings',
-            templateUrl: 'modules/settings/settings.html',
-            controller: 'settingsCtrl as vm'
-        })
-    }
+  function configuration ($urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
+  };
 })();

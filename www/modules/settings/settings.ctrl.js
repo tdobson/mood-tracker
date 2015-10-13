@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     angular
-        .module('bluebot.users')
+        .module('bluebot')
         .controller('settingsCtrl', settingsCtrl);
 
     function settingsCtrl() {
