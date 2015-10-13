@@ -1,0 +1,12 @@
+<ion-view view-title="Settings">
+    <ion-content>
+        <ul class="list">
+            <li class="item" ng-repeat="c in vm.settings.user.categories">
+                {{c.highName}}
+                {{c.highIcon}}
+                {{c.lowName}}
+                {{c.lowIcon}}
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
