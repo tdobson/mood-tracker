@@ -28,3 +28,17 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     }
 }
 
+.range {
+    padding: 2px 7px;
+
+    .icon {
+        min-width: 40px;
+
+        p {
+            font-size: 10px;
+            text-align: center;
+            word-break: break-all;
+            white-space: normal;
+        }
+    }
+}

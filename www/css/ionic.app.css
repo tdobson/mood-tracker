@@ -9289,3 +9289,13 @@ a.button {
 
 .item-input textarea {
   min-height: 100px; }
+
+.range {
+  padding: 2px 7px; }
+  .range .icon {
+    min-width: 40px; }
+    .range .icon p {
+      font-size: 10px;
+      text-align: center;
+      word-break: break-all;
+      white-space: normal; }

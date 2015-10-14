@@ -2,10 +2,16 @@
     <ion-content>
         <form ng-submit="vm.submit()">
             <div class="list">
-                <label class="item range" ng-repeat="slider in vm.sliders">
-                    <i class="icon {{slider.iconLow}}"></i>
-                    <input type="range" min="0" max="100" value="50" ng-model="vm.data.sliders[slider.nameHigh]">
-                    <i class="icon {{slider.iconHigh}}"></i>
+                <label class="item range" ng-repeat="c in vm.categories">
+                    <div class="icon">
+                        <i class="{{c.iconLow}}"></i>
+                        <p>{{c.nameLow}}</p>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" ng-model="vm.data.sliders[c.$id]">
+                    <div class="icon">
+                        <i class="{{c.iconHigh}}"></i>
+                        <p>{{c.nameHigh}}</p>
+                    </div>
                 </label>
                 <label class="item item-input item-stacked-label">
                     <span class="input-label">Notes</span>
