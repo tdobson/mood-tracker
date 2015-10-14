@@ -3,9 +3,10 @@
 
   angular.module('bluebot', [
 
-    // 3rd party modules
-    'ionic',
-    'chart.js'
+      // 3rd party modules
+      'ionic',
+      'chart.js',
+      'firebase'
 
   ])
   .run(runFn)

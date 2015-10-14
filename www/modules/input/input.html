@@ -1,0 +1,20 @@
+<ion-view view-title="How are you feeling?">
+    <ion-content>
+        <form ng-submit="vm.submit()">
+            <div class="list">
+                <label class="item range" ng-repeat="slider in vm.sliders">
+                    <i class="icon {{slider.iconLow}}"></i>
+                    <input type="range" min="0" max="100" value="50" ng-model="vm.data.sliders[slider.nameHigh]">
+                    <i class="icon {{slider.iconHigh}}"></i>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Notes</span>
+                    <textarea placeholder="What did you do today?" ng-model="vm.data.notes"></textarea>
+                </label>
+            </div>
+            <div class="padding">
+                <button class="button button-positive button-block" type="submit">Submit</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>
