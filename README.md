@@ -3,9 +3,9 @@
 
 ## Building for development
 1. [Install npm](https://docs.npmjs.com/getting-started/installing-node)
-2. Install bower: 
+2. Install bower & gulp: 
 
-        npm install -g bower
+        npm install -g bower gulp
 
 3. [Install ionic and cordova](http://ionicframework.com/getting-started/)
 
